@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabinet Dentaire Dr Benali Meriem</title>
+    
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Bungee&display=swap" rel="stylesheet">
+      
+      
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+      
+      
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+      
+    <link rel="stylesheet" href="global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo max-lg:mr-10">Cabinet Dentaire 
+            <img class="mr-40" src="imgs/logo.jpg" alt="">
+        </div>
+        <nav>
+            <ul class="max-lg:hidden">
+                <li><a href="#hero" class="scroll-to">Accueil</a></li>
+                <li><a href="#about" class="scroll-to">À Propos</a></li>
+                <li><a href="#services" class="scroll-to">Nos Services</a></li>
+                <li><a href="#experience" class="scroll-to">Notre Expérience</a></li>
+                <li><a href="#reviews" class="scroll-to">Avis</a></li>
+                <li><a href="#time" class="scroll-to">Time-Table</a></li>
+                <li><a href="#contact" class="scroll-to">Contact</a></li>
+            </ul>
+            <img src="imgs/menu.svg" alt="Menu" 
+                class="text-black lg:hidden menu-icon w-6 cursor-pointer absolute right-10 top-8">
+        </nav>
+    </header>
+    <div class="header2 fixed top-0 right-0 w-[250px] flex flex-col h-screen transform translate-x-full transition-transform duration-500 ease-in-out z-50">
+        <img src="imgs/close.png" alt="Close Menu" class="w-8 ml-8 mt-8 rounded-full cursor-pointer transition-transform transform hover:scale-110 close-icon">
+        <ul class="mt-12 space-y-4 text-lg font-medium text-gray-800">
+            <li><a href="#hero" class="scroll-to">Accueil</a></li>
+            <li><a href="#about" class="scroll-to">À Propos</a></li>
+            <li><a href="#services" class="scroll-to">Nos Services</a></li>
+            <li><a href="#experience" class="scroll-to">Notre Expérience</a></li>
+            <li><a href="#reviews" class="scroll-to">Avis</a></li>
+            <li><a href="#time" class="scroll-to">Time-Table</a></li>
+            <li><a href="#contact" class="scroll-to">Contact</a></li>
+        </ul>
+    </div>
+    <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
+
+    
+        
+   
+
+    <section id="hero" class="hero" ">
+        <h1>Bienvenue au Cabinet Dentaire Dr Benali Meriem</h1>
+        <p>Votre sourire, notre priorité. Des soins dentaires professionnels et une équipe dédiée pour un sourire éclatant.</p>
+        <a href="#contact" class="scroll-to">Prenez Rendez-vous</a>
+    </section>
+
+    <section id="about" class="about">
+        <h2>À Propos de Nous</h2>
+        <p>Le Cabinet Dentaire Dr Benali Meriem est dédié à offrir des soins dentaires de qualité supérieure. Nous combinons expertise et technologie moderne pour répondre à tous vos besoins dentaires.</p>
+        <img src="imgs/about.jpg" alt="Clinique dentaire">
+    </section>
+
+    <section id="services" class="services">
+        <h2>Nos Services</h2>
+        <div class="card">
+            <img src="imgs/Consultation.jpg" alt="Consultation Dentaire">
+            <h3>Consultation Dentaire</h3>
+            <p>Des diagnostics précis pour assurer la santé de vos dents.</p>
+        </div>
+        <div class="card">
+            <img src="imgs/Blanchiment.jpg" alt="Blanchiment des Dents">
+            <h3>Blanchiment des Dents</h3>
+            <p>Retrouvez un sourire éclatant avec nos techniques avancées.</p>
+        </div>
+        <div class="card">
+            <img src="imgs/placement.webp" alt="Implants Dentaires">
+            <h3>Implants Dentaires</h3>
+            <p>Remplacez vos dents manquantes avec des solutions durables.</p>
+        </div><div class="card">
+            <img src="imgs/appariel.webp" alt="Implants Dentaires">
+            <h3>Appareils Dentaires</h3>
+    <p>Corrigez l'alignement de vos dents et améliorez votre sourire avec nos appareils .</p>
+
+        </div>
+        <div class="card  shadow-2xl shadow-red-700">
+            <img src="imgs/plombage.webp" alt="Plombage Dentaire">
+            <h3>Plombage Dentaire</h3>
+            <p>Réparez vos dents cariées avec nos solutions de plombage modernes .</p>
+        </div>
+        
+    </section>
+
+    <section id="experience" class="experience">
+        <h2>Notre Expérience</h2>
+        <div class="experience-content">
+            <div class="experience-text">
+                <h3>Expertise Dentaire</h3>
+                <p>Fort de plusieurs années d’expérience, notre équipe de professionnels dentaires a aidé des milliers de patients à retrouver confiance en leur sourire. Que vous ayez besoin de soins préventifs, esthétiques ou restaurateurs, nous mettons notre expertise à votre service.</p>
+            </div>
+            <div class="experience-image">
+                <img src="imgs/experience.webp" alt="Expérience dentaire">
+            </div>
+        </div>
+        <div class="experience-stats">
+            <div class="stat">
+                <h4>+15</h4>
+                <p>Années d'expérience</p>
+            </div>
+            <div class="stat">
+                <h4>500+</h4>
+                <p>Patients satisfaits</p>
+            </div>
+            <div class="stat">
+                <h4>50+</h4>
+                <p>Soins spécialisés</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="reviews" class="reviews py-12 px-4 lg:px-20 bg-gray-50 relative">
+        <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Avis de Nos Patients</h2>
+        <div class="flex justify-center relative group">
+            <a href="https://www.google.com/maps/place/Cabinet+dentaire+Dr+BENALI+meriem/@35.7120273,-0.6944249,12z/data=!4m8!3m7!1s0xd7e7d066f5a4d75:0xaae044a36bd6ae3d!8m2!3d35.7395198!4d-0.568936!9m1!1b1!16s%2Fg%2F11n0dkst2g?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" class="relative">
+                <img src="imgs/reviews.png" alt="avis" id="avisMap" 
+                    class="rounded-md shadow-lg hover:shadow-xl transition-shadow w-full max-w-lg object-contain">
+                <!-- Overlay for call-to-action -->
+                <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p class="text-white text-lg font-medium">Cliquez ici pour voir les avis sur Google Maps</p>
+                </div>
+            </a>
+        </div>
+    </section>
+    
+
+    <section id="time" class="pricing py-12 bg-gray-100">
+        <h2 class="text-3xl font-bold text-center mb-6">Horaires d'Ouverture</h2>
+       
+        <div class="max-w-4xl mx-auto">
+            <table class="table-auto w-full bg-white shadow-lg rounded-lg">
+                <thead class="bg-blue-600 text-white">
+                    <tr>
+                        <th class="px-6 py-4 text-left">Jour</th>
+                        <th class="px-6 py-4 text-left">Heures</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b">
+                        <td class="px-6 py-4">Lundi</td>
+                        <td class="px-6 py-4">9h00 - 17h00</td>
+                    </tr>
+                    <tr class="border-b bg-gray-50">
+                        <td class="px-6 py-4">Mardi</td>
+                        <td class="px-6 py-4">9h00 - 17h00</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="px-6 py-4">Mercredi</td>
+                        <td class="px-6 py-4">9h00 - 17h00</td>
+                    </tr>
+                    <tr class="border-b bg-gray-50">
+                        <td class="px-6 py-4">Jeudi</td>
+                        <td class="px-6 py-4">9h00 - 17h00</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="px-6 py-4">Vendredi</td>
+                        <td class="px-6 py-4 text-red-500">Fermé</td>
+                    </tr>
+                    <tr class="border-b bg-gray-50">
+                        <td class="px-6 py-4">Samedi</td>
+                        <td class="px-6 py-4">9h00 - 17h00</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4">Dimanche</td>
+                        <td class="px-6 py-4">9h00 - 17h00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+
+    <section id="contact" class="contact">
+        <h2>Contactez-Nous</h2>
+        
+        <p>
+            <img src="imgs/address.png" alt="Address Icon" class="icon"> 
+            Adresse :2ème étage, 35 rue Marhoum Ramdane, Bir El Djir, Oran, Algeria
+        </p>
+        <p>
+            <img src="imgs/phone.jpg" alt="Phone Icon" class="icon"> 
+            Téléphone : 0795 25 85 18
+        </p>
+        <p>
+            <img src="imgs/email.png" alt="Email Icon" class="icon"> 
+            Email : cabinetdentaire.drbenali@gmail.com
+        </p>
+        
+        <div class="hrefs flex mx-auto w-[20%] ">
+            <a href="https://www.facebook.com/p/Cabinet-dentaire-Dr-Benali-Meriem-100064153329184/">
+                <img class="  opacity-65 mx-9 hover:opacity-100 rounded-full  w-16" 
+                     loading="lazy" src="imgs/facebook_icon.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/cabinet.dentaire.dr.benali/">
+                <img class="  opacity-65  hover:opacity-100 mx-9 rounded-full w-16" 
+                     loading="lazy" src="imgs/instagram-icone.avif" alt="Instagram">
+            </a>
+        </div>
+    </section>
+    
+    <section class="location">
+        <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Cabinet dentaire Dr BENALI meriem 2ème étage, 35 rue Marhoum Ramdane, Bir El Djir El Djir&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://embed-googlemap.com">embed google maps in website</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Cabinet Dentaire Dr Benali Meriem. Tous droits réservés.</p>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

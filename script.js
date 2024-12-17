@@ -1,4 +1,11 @@
-
+window.addEventListener('load', () => {
+    window.scrollTo(0, 0); // Scroll to the top when the page is loaded
+});
+document.addEventListener('DOMContentLoaded', function () {
+    // Disable initial scroll behavior to #hero on page load
+    if (window.location.hash === '#hero') {
+        window.scrollTo(0, 0);  // Ensure page loads at top (scroll position 0)
+    }})
 // Smooth scrolling
 document.querySelectorAll('.scroll-to').forEach(link => {
     link.addEventListener('click', function (e) {
@@ -108,3 +115,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    let lastScrollY = window.scrollY;
+    const header = document.querySelector("header");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {  // Start animation after 200px scroll
+            if (window.scrollY > lastScrollY) {
+                header.classList.add("hidden");
+            } else {
+                header.classList.remove("hidden");
+            }
+        }
+        lastScrollY = window.scrollY;
+    });
+});

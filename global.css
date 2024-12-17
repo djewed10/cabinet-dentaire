@@ -35,6 +35,9 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+     transform: translateY(0);
+    transition: transform 0.4s ease-in-out;
+   
     background: rgba(217, 167, 199, 0.9);
     backdrop-filter: blur(8px); /* Increased blur for more modern look */
     -webkit-backdrop-filter: blur(8px); /* Safari support */
@@ -47,7 +50,9 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slightly larger shadow */
     transition: background 0.3s ease-in-out; /* Smooth background transition on scroll */
 }
-
+.hidden {
+    transform: translateY(-100%);
+}
 /* Logo Styling */
 header .logo {
     
@@ -219,6 +224,13 @@ header nav ul li a:hover,.header2 ul li a:hover {
         }
         .about img{
             border-radius: 50%;
+            
+        }
+        @media(min-width:660px){
+            .about img{
+                width: 50%;
+                margin-inline: auto;
+            }
         }
 
         .about, .services, .experience, .contact .reviews {

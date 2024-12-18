@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 h1, h2 {
     font-family: 'Playfair Display', serif;
     font-weight: 700; /* For bold headings */
@@ -34,6 +34,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    padding: 0%;
     width: 100%;
      transform: translateY(0);
     transition: transform 0.4s ease-in-out;
@@ -55,12 +56,17 @@ header {
 }
 /* Logo Styling */
 header .logo {
-    
+    padding: 0;
+    font-family: 'Great Vibes', cursive; /* Apply butterfly-like font */
+    font-size: 2rem; /* Adjust font size for visibility */
+    color: #333;  
     font-size: 2rem; /* Larger font for better visibility */
     font-weight: bold;
     display: flex;
     align-items: center;
-    gap: 1rem; /* Space between logo text and image */
+    gap: 0.6rem
+    
+     /* Space between logo text and image */
 }
 
 header .logo img {
@@ -68,11 +74,11 @@ header .logo img {
     height: auto;
     margin-top: 0px;
     border-radius: 50%; /* Circle logo image */
-    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    transition: transform 0.3s linear; /* Smooth transition for hover effect */
 }
 
-header .logo:hover img {
-    transform: scale(1.1); /* Slight scale-up effect on hover */
+header .logo:hover  {
+    transform: scale(1.05); /* Slight scale-up effect on hover */
 }
 
 
@@ -115,24 +121,7 @@ header nav ul li a:hover,.header2 ul li a:hover {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
-    header {
-        
-        padding: 1rem 2rem; /* Reduced padding for smaller screens */
-        flex-direction: column; /* Stack the logo and nav vertically */
-        text-align: center;
-    }
 
-    header .logo {
-        font-size: 1.5rem; /* Smaller font size for smaller screens */
-        gap: 0.5rem; /* Reduced gap */
-    }
-
-    header nav ul {
-        flex-direction: column; /* Stack nav items vertically */
-        gap: 1rem;
-    }
-}
 .header2 {
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     background-color: rgba(255, 255, 255, 0.2) !important; /* Override Tailwind's bg-white */
@@ -542,8 +531,4 @@ height: 600px;
         }
 
 
-        @media(max-width:518px){
-            .menu-icon{
-                top: 40px !important;
-            }
-        }
+       

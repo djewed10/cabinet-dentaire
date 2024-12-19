@@ -539,4 +539,8 @@ height: 600px;
         }
 
 
-       
+        @media not all and (min-width: 500px) {
+            .n{
+                margin-top: 2.5rem /* 40px */;
+            }
+        }

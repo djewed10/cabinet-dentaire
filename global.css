@@ -68,6 +68,14 @@ header .logo {
     
      /* Space between logo text and image */
 }
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+header {
+  font-family: 'Great Vibes', cursive;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px white;
+}
+
 
 header .logo img {
     width: 40px; /* Slightly larger logo image */
@@ -106,7 +114,7 @@ header nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: 500;
-    font-size: 1.1rem; /* Increased font size for readability */
+    font-size: 1.3rem; /* Increased font size for readability */
     position: relative; /* Needed for pseudo-element effect */
     transition: color 0.3s ease, transform 0.3s ease; /* Added transform for smooth scaling effect */
 }

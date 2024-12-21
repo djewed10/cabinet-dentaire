@@ -1,12 +1,22 @@
+// Ensure the page loads at the top
 window.addEventListener('load', () => {
     window.scrollTo(0, 0); // Scroll to the top when the page is loaded
 });
-document.addEventListener('DOMContentLoaded', function () {
-    // Disable initial scroll behavior to #hero on page load
-    if (window.location.hash === '#hero') {
-        window.scrollTo(0, 0);  // Ensure page loads at top (scroll position 0)
-    }})
-// Smooth scrolling
+
+// Preloader handling
+window.onload = () => {
+    const preloader = document.querySelector('.pre');
+
+    // Hide preloader after it is displayed
+    setTimeout(() => {
+        preloader.style.display = 'none';
+
+        // Start GSAP animations after preloader is removed
+        startAnimations();
+    }); // Adjust the timeout as needed
+};
+
+// Smooth scrolling for links
 document.querySelectorAll('.scroll-to').forEach(link => {
     link.addEventListener('click', function (e) {
         e.preventDefault();
@@ -15,76 +25,79 @@ document.querySelectorAll('.scroll-to').forEach(link => {
     });
 });
 
-// GSAP animations
-gsap.from("header", { y: -100, duration: 1, opacity: 0 });
-gsap.from(".hero h1", { opacity: 0, duration: 1, delay: 0.5, y: 110 });
-gsap.from(".hero p", { opacity: 0, duration: 1, delay: 1, y: 100 });
-gsap.from(".hero a", { opacity: 0, duration: 1, delay: 1.5, y: 100 });
+// GSAP animations encapsulated in a function
+function startAnimations() {
+    // Header and hero animations
+    gsap.from("header", { y: -100, duration: 1, opacity: 0 });
+    gsap.from(".hero h1", { opacity: 0, duration: 1, delay: 0.5, y: 110 });
+    gsap.from(".hero p", { opacity: 0, duration: 1, delay: 1, y: 100 });
+    gsap.from(".hero a", { opacity: 0, duration: 1, delay: 1.5, y: 100 });
 
-gsap.registerPlugin(ScrollTrigger);
-gsap.from(".about ", {
-    opacity: 0,
-    duration: 1,
-    y: 100,
-    scrollTrigger: {
-        trigger: ".about",
-        start: "top center",
-    },
-});
+    // GSAP ScrollTrigger animations
+    gsap.registerPlugin(ScrollTrigger);
 
-gsap.from(".services", {
-    opacity: 0,
-    duration: 1,
-    y: 100,
-    scrollTrigger: {
-        trigger: ".services",
-        start: "top center",
-    },
-});
+    gsap.from(".about", {
+        opacity: 0,
+        duration: 1,
+        y: 100,
+        scrollTrigger: {
+            trigger: ".about",
+            start: "top center",
+        },
+    });
 
+    gsap.from(".services", {
+        opacity: 0,
+        duration: 1,
+        y: 100,
+        scrollTrigger: {
+            trigger: ".services",
+            start: "top center",
+        },
+    });
 
-gsap.from(".experience", {
-    opacity: 0,
-    duration: 1,
-    y: 100,
-    scrollTrigger: {
-        trigger: ".experience",
-        start: "top center",
-    },
-});
+    gsap.from(".experience", {
+        opacity: 0,
+        duration: 1,
+        y: 100,
+        scrollTrigger: {
+            trigger: ".experience",
+            start: "top center",
+        },
+    });
 
-gsap.from(".contact", {
-    opacity: 0,
-    duration: 1,
-    y: 100,
-    scrollTrigger: {
-        trigger: ".contact",
-        start: "top center",
-    },
-});
+    gsap.from(".contact", {
+        opacity: 0,
+        duration: 1,
+        y: 100,
+        scrollTrigger: {
+            trigger: ".contact",
+            start: "top center",
+        },
+    });
 
-gsap.from(" .reviews", {
-    opacity: 0,
-    duration: 1,
-    y: 100,
-    scrollTrigger: {
-        trigger: ".reviews",
-        start: "top center",
-    },
-});
-gsap.from(" .pricing", {
-    opacity: 0,
-    duration: 1,
-    y: 100,
-    scrollTrigger: {
-        trigger: ".pricing",
-        start: "top center",
-    },
-});
+    gsap.from(".reviews", {
+        opacity: 0,
+        duration: 1,
+        y: 100,
+        scrollTrigger: {
+            trigger: ".reviews",
+            start: "top center",
+        },
+    });
 
+    gsap.from(".pricing", {
+        opacity: 0,
+        duration: 1,
+        y: 100,
+        scrollTrigger: {
+            trigger: ".pricing",
+            start: "top center",
+        },
+    });
+}
 
-
-
+// Mobile menu functionality
 document.addEventListener('DOMContentLoaded', () => {
     const menuIcon = document.querySelector('.menu-icon');
     const closeIcon = document.querySelector('.close-icon');
@@ -115,6 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Hide header on scroll down, show on scroll up
 document.addEventListener("DOMContentLoaded", () => {
     let lastScrollY = window.scrollY;
     const header = document.querySelector("header");

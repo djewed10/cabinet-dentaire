@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Hide header on scroll down, show on scroll up
 document.addEventListener("DOMContentLoaded", () => {
     let lastScrollY = window.scrollY;
-    const header = document.querySelector("header");
+    const header = document.querySelector(".hh");
 
     window.addEventListener("scroll", () => {
         if (window.scrollY > 200) {  // Start animation after 200px scroll

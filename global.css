@@ -640,4 +640,9 @@ height: 600px;
     right: 15%;
     animation-delay: .3s;
   }
-  
+  .logop {
+           
+    animation: scaleAnimation 2s infinite; /* Continuous scaling animation */
+    transition: none; /* Disable smooth hover transitions */
+    
+}

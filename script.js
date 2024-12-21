@@ -39,7 +39,7 @@ function startAnimations() {
     gsap.from(".about", {
         opacity: 0,
         duration: 1,
-        y: 100,
+        y: 50,
         scrollTrigger: {
             trigger: ".about",
             start: "top center",
@@ -49,7 +49,7 @@ function startAnimations() {
     gsap.from(".services", {
         opacity: 0,
         duration: 1,
-        y: 100,
+        y: 50,
         scrollTrigger: {
             trigger: ".services",
             start: "top center",
@@ -59,7 +59,7 @@ function startAnimations() {
     gsap.from(".experience", {
         opacity: 0,
         duration: 1,
-        y: 100,
+        y: 50,
         scrollTrigger: {
             trigger: ".experience",
             start: "top center",
@@ -69,7 +69,7 @@ function startAnimations() {
     gsap.from(".contact", {
         opacity: 0,
         duration: 1,
-        y: 100,
+        y: 50,
         scrollTrigger: {
             trigger: ".contact",
             start: "top center",
@@ -79,7 +79,7 @@ function startAnimations() {
     gsap.from(".reviews", {
         opacity: 0,
         duration: 1,
-        y: 100,
+        y: 50,
         scrollTrigger: {
             trigger: ".reviews",
             start: "top center",
@@ -89,7 +89,7 @@ function startAnimations() {
     gsap.from(".pricing", {
         opacity: 0,
         duration: 1,
-        y: 100,
+        y: 50,
         scrollTrigger: {
             trigger: ".pricing",
             start: "top center",

@@ -8,6 +8,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Bungee&display=swap" rel="stylesheet">
       <link rel="icon" href="imgs/logo.jpg">
       
+      <link rel="preload" href="styles.css" as="style">
+      <link rel="preload" href="/imgs/logo.jpg" as="image">
+      
+
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
       
       
@@ -24,7 +28,7 @@
         <!-- Logo Section -->
         <div class="logo  flex flex-col items-center mb-4">
           <p class="text-white logop  shadow-2xl text-2xl font-bold">Dr.B.Meriem</p>
-          <img class="w-20 mt-4 " src="imgs/logo.jpg" alt="Logo">
+          <img loading="lazy" class="w-20 mt-4 " src="imgs/logo.jpg" alt="Logo">
         </div>
       
         <!-- Wrapper Section -->
@@ -39,7 +43,7 @@
       </header>
     <header class=" hh ">
         <div class="logo max-sm:relative max-sm:left-[-30px]  max-lg:mr-10">Dr.B.Meriem 
-            <img class="mr-40" src="imgs/logo.jpg" alt="">
+            <img loading="lazy" class="mr-40" src="imgs/logo.jpg" alt="">
         </div>
         <nav>
             <ul class="max-lg:hidden">
@@ -51,12 +55,12 @@
                 <li><a href="#time" class="scroll-to">Time-Table</a></li>
                 <li><a href="#contact" class="scroll-to">Contact</a></li>
             </ul>
-            <img src="imgs/menu.svg" alt="Menu" 
+            <img loading="lazy" src="imgs/menu.svg" alt="Menu" 
                 class="text-black lg:hidden menu-icon w-6 cursor-pointer absolute right-10 top-7">
         </nav>
     </header>
     <div class="header2 fixed top-0 right-0 w-[250px] flex flex-col h-screen transform translate-x-full transition-transform duration-500 ease-in-out z-50">
-        <img src="imgs/close.png" alt="Close Menu" class="w-8 ml-8 mt-8 rounded-full cursor-pointer transition-transform transform hover:scale-110 close-icon">
+        <img loading="lazy" src="imgs/close.png" alt="Close Menu" class="w-8 ml-8 mt-8 rounded-full cursor-pointer transition-transform transform hover:scale-110 close-icon">
         <ul class="mt-12 space-y-4 text-lg font-medium text-gray-800">
             <li><a href="#hero" class="scroll-to">Accueil</a></li>
             <li><a href="#about" class="scroll-to">À Propos</a></li>
@@ -82,33 +86,33 @@
     <section id="about" class="about">
         <h2>À Propos de Nous</h2>
         <p>Le Cabinet Dentaire Dr Benali Meriem est dédié à offrir des soins dentaires de qualité supérieure. Nous combinons expertise et technologie moderne pour répondre à tous vos besoins dentaires.</p>
-        <img src="imgs/about.jpg" alt="Clinique dentaire">
+        <img loading="lazy" src="imgs/about.jpg" alt="Clinique dentaire">
     </section>
 
     <section id="services" class="services">
         <h2>Nos Services</h2>
         <div class="card">
-            <img src="imgs/Consultation.jpg" alt="Consultation Dentaire">
+            <img loading="lazy" src="imgs/Consultation.jpg" alt="Consultation Dentaire">
             <h3>Consultation Dentaire</h3>
             <p>Des diagnostics précis pour assurer la santé de vos dents.</p>
         </div>
         <div class="card">
-            <img src="imgs/Blanchiment.jpg" alt="Blanchiment des Dents">
+            <img loading="lazy" src="imgs/Blanchiment.jpg" alt="Blanchiment des Dents">
             <h3>Blanchiment des Dents</h3>
             <p>Retrouvez un sourire éclatant avec nos techniques avancées.</p>
         </div>
         <div class="card">
-            <img src="imgs/placement.webp" alt="Implants Dentaires">
+            <img loading="lazy" src="imgs/placement.webp" alt="Implants Dentaires">
             <h3>Implants Dentaires</h3>
             <p>Remplacez vos dents manquantes avec des solutions durables.</p>
         </div><div class="card">
-            <img src="imgs/appariel.webp" alt="Implants Dentaires">
+            <img loading="lazy" src="imgs/appariel.webp" alt="Implants Dentaires">
             <h3>Appareils Dentaires</h3>
     <p>Corrigez l'alignement de vos dents et améliorez votre sourire avec nos appareils .</p>
 
         </div>
         <div class="card  shadow-2xl shadow-red-700">
-            <img src="imgs/plombage.webp" alt="Plombage Dentaire">
+            <img loading="lazy" src="imgs/plombage.webp" alt="Plombage Dentaire">
             <h3>Plombage Dentaire</h3>
             <p>Réparez vos dents cariées avec nos solutions de plombage modernes .</p>
         </div>
@@ -123,7 +127,7 @@
                 <p>Fort de plusieurs années d’expérience, notre équipe de professionnels dentaires a aidé des milliers de patients à retrouver confiance en leur sourire. Que vous ayez besoin de soins préventifs, esthétiques ou restaurateurs, nous mettons notre expertise à votre service.</p>
             </div>
             <div class="experience-image">
-                <img src="imgs/experience.webp" alt="Expérience dentaire">
+                <img loading="lazy" src="imgs/experience.webp" alt="Expérience dentaire">
             </div>
         </div>
         <div class="experience-stats">
@@ -147,7 +151,7 @@
         <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Avis de Nos Patients</h2>
         <div class="flex justify-center relative group">
             <a href="https://www.google.com/maps/place/Cabinet+dentaire+Dr+BENALI+meriem/@35.7120273,-0.6944249,12z/data=!4m8!3m7!1s0xd7e7d066f5a4d75:0xaae044a36bd6ae3d!8m2!3d35.7395198!4d-0.568936!9m1!1b1!16s%2Fg%2F11n0dkst2g?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" class="relative">
-                <img src="imgs/reviews.png" alt="avis" id="avisMap" 
+                <img loading="lazy" src="imgs/reviews.png" alt="avis" id="avisMap" 
                     class="rounded-md shadow-lg hover:shadow-xl transition-shadow w-full max-w-lg object-contain">
                 <!-- Overlay for call-to-action -->
                 <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -208,25 +212,25 @@
         <h2>Contactez-Nous</h2>
         
         <p>
-            <img src="imgs/address.png" alt="Address Icon" class="icon"> 
+            <img loading="lazy" src="imgs/address.png" alt="Address Icon" class="icon"> 
             Adresse :2ème étage, 35 rue Marhoum Ramdane, Bir El Djir, Oran, Algeria
         </p>
         <p>
-            <img src="imgs/phone.png" alt="Phone Icon" class="icon"> 
+            <img loading="lazy" src="imgs/phone.png" alt="Phone Icon" class="icon"> 
             Téléphone : 0795 25 85 18
         </p>
         <p>
-            <img src="imgs/email.png" alt="Email Icon" class="icon n max-sm:mt-10"> 
+            <img loading="lazy" src="imgs/email.png" alt="Email Icon" class="icon n max-sm:mt-10"> 
             Email : cabinetdentaire.drbenali@gmail.com
         </p>
         
         <div class="hrefs flex mx-auto w-[20%] ">
             <a href="https://www.facebook.com/p/Cabinet-dentaire-Dr-Benali-Meriem-100064153329184/">
-                <img class="  opacity-65 mx-9 hover:opacity-100 rounded-full  w-16" 
+                <img loading="lazy" class="  opacity-65 mx-9 hover:opacity-100 rounded-full  w-16" 
                      loading="lazy" src="imgs/facebook_icon.png" alt="Facebook">
             </a>
             <a href="https://www.instagram.com/cabinet.dentaire.dr.benali/">
-                <img class="  opacity-65  hover:opacity-100 mx-9 rounded-full w-16" 
+                <img loading="lazy" class="  opacity-65  hover:opacity-100 mx-9 rounded-full w-16" 
                      loading="lazy" src="imgs/insta.png" alt="Instagram">
             </a>
         </div>

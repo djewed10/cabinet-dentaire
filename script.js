@@ -13,7 +13,7 @@ window.onload = () => {
 
         // Start GSAP animations after preloader is removed
         startAnimations();
-    }); // Adjust the timeout as needed
+    },0); // Adjust the timeout as needed
 };
 
 // Smooth scrolling for links

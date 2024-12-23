@@ -39,63 +39,148 @@ function startAnimations() {
     gsap.from(".about", {
         opacity: 0,
         duration: 1,
-        y: 50,
+        y: 100,
         scrollTrigger: {
             trigger: ".about",
-            start: "top center",
+            start: "top 90%",
         },
     });
 
     gsap.from(".services", {
         opacity: 0,
         duration: 1,
-        y: 50,
+        y: 100,
         scrollTrigger: {
             trigger: ".services",
-            start: "top center",
+            start: "top 90%",
         },
     });
 
     gsap.from(".experience", {
         opacity: 0,
         duration: 1,
-        y: 50,
+        y: 100,
         scrollTrigger: {
             trigger: ".experience",
-            start: "top center",
+            start: "top 90%",
         },
     });
 
     gsap.from(".contact", {
         opacity: 0,
         duration: 1,
-        y: 50,
+        y: 100,
         scrollTrigger: {
             trigger: ".contact",
-            start: "top center",
+            start: "top 90%",
         },
     });
 
     gsap.from(".reviews", {
         opacity: 0,
         duration: 1,
-        y: 50,
+        x: 200,
         scrollTrigger: {
             trigger: ".reviews",
-            start: "top center",
+            start: "top 70%",
         },
     });
 
     gsap.from(".pricing", {
         opacity: 0,
         duration: 1,
-        y: 50,
+        x: -200,
         scrollTrigger: {
             trigger: ".pricing",
-            start: "top center",
+            start: "top 70%",
         },
     });
+
+    gsap.from(".card1", {
+        opacity: 0,
+        duration: 1,
+        x: -100,
+        scrollTrigger: {
+            trigger: ".card1",
+            start: "top 90%",
+        },
+    });
+
+    gsap.from(".card2", {
+        opacity: 0,
+        duration: 1,
+        y: 100,
+        scrollTrigger: {
+            trigger: ".card2",
+            start: "top 90%",
+        },
+    });  
+
+    gsap.from(".card3", {
+        opacity: 0,
+        duration: 1,
+        x: 100,
+        scrollTrigger: {
+            trigger: ".card3",
+            start: "top 90%",
+        },
+    });
+
+    gsap.from(".card4", {
+        opacity: 0,
+        duration: 1,
+        x: -100,
+        scrollTrigger: {
+            trigger: ".card4",
+            start: "top 90%",
+        },
+    });
+
+    gsap.from(".card5", {
+        opacity: 0,
+        duration: 1,
+        x: 100,
+        scrollTrigger: {
+            trigger: ".card5",
+            start: "top 90%",
+        },
+    });
+
+
+    gsap.from(".stat1", {
+        opacity: 0,
+        duration: 1,
+        x: -100,
+        scrollTrigger: {
+            trigger: ".stat1",
+            start: "top 90%",
+        },
+    });
+
+    gsap.from(".stat2", {
+        opacity: 0,
+        duration: 1,
+        y: 100,
+        scrollTrigger: {
+            trigger: ".stat2",
+            start: "top 90%",
+        },
+    });  
+
+    gsap.from(".stat3", {
+        opacity: 0,
+        duration: 1,
+        x: 100,
+        scrollTrigger: {
+            trigger: ".stat3",
+            start: "top 90%",
+        },
+    });
+
 }
+
+
+
 
 // Mobile menu functionality
 document.addEventListener('DOMContentLoaded', () => {

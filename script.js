@@ -55,47 +55,6 @@ function startAnimations() {
             start: "top 90%",
         },
     });
-
-    gsap.from(".experience", {
-        opacity: 0,
-        duration: 1,
-        y: 100,
-        scrollTrigger: {
-            trigger: ".experience",
-            start: "top 90%",
-        },
-    });
-
-    gsap.from(".contact", {
-        opacity: 0,
-        duration: 1,
-        y: 100,
-        scrollTrigger: {
-            trigger: ".contact",
-            start: "top 90%",
-        },
-    });
-
-    gsap.from(".reviews", {
-        opacity: 0,
-        duration: 1,
-        x: 200,
-        scrollTrigger: {
-            trigger: ".reviews",
-            start: "top 70%",
-        },
-    });
-
-    gsap.from(".pricing", {
-        opacity: 0,
-        duration: 1,
-        x: -200,
-        scrollTrigger: {
-            trigger: ".pricing",
-            start: "top 70%",
-        },
-    });
-
     gsap.from(".card1", {
         opacity: 0,
         duration: 1,
@@ -146,6 +105,15 @@ function startAnimations() {
         },
     });
 
+    gsap.from(".experience", {
+        opacity: 0,
+        duration: 1,
+        y: 100,
+        scrollTrigger: {
+            trigger: ".experience",
+            start: "top 90%",
+        },
+    });
 
     gsap.from(".stat1", {
         opacity: 0,
@@ -176,6 +144,41 @@ function startAnimations() {
             start: "top 90%",
         },
     });
+
+
+    gsap.from(".contact", {
+        opacity: 0,
+        duration: 1,
+        y: 100,
+        scrollTrigger: {
+            trigger: ".contact",
+            start: "top 90%",
+        },
+    });
+
+    gsap.from(".reviews", {
+        opacity: 0,
+        duration: 1,
+        x: 200,
+        scrollTrigger: {
+            trigger: ".reviews",
+            start: "top 70%",
+        },
+    });
+
+    gsap.from(".pricing", {
+        opacity: 0,
+        duration: 1,
+        x: -200,
+        scrollTrigger: {
+            trigger: ".pricing",
+            start: "top 70%",
+        },
+    });
+
+   
+
+
 
 }
 
